@@ -26,10 +26,7 @@ jobs:
       
       - name: Verify Rokit Installation
         run: rokit --version || echo "Rokit installation failed"
-
-      - name: Download Global Roblox Types
-        run: curl -o scripts/roblox.d.lua https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/main/scripts/globalTypes.d.lua
-
+        
       - name: Install Selene
         run: rokit install selene || echo "Selene installation failed"
 
