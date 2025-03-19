@@ -17,3 +17,7 @@
 <h3>
   luau lsp: https://github.com/JohnnyMorganz/luau-lsp
 </h3>
+
+<h3>
+  aftman: https://github.com/LPGhatguy/aftman
+</h3>
