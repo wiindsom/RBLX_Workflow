@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Rokit
+        run: |
+          curl -sSf https://raw.githubusercontent.com/rojo-rbx/rokit/main/scripts/install.sh | bash
+      
+      - name: Verify Rokit Installation
+        run: rokit --version || echo "Rokit installation failed"
+
+      - name: Install Selene
+        run: rokit install selene || echo "Selene installation failed"
+
+      - name: Linter Deployed
+        run: |
+          selene ./src
