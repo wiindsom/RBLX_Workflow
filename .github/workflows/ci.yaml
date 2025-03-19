@@ -13,6 +13,8 @@ defaults:
     shell: bash
 
 jobs:
+
+
   lint:
     name: Lint
     runs-on: ubuntu-latest
@@ -20,16 +22,14 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
     
-    - uses: rojo-rbx/rokit
-      name: Install Rokit
-      with:
-        version: "^1.0.0"
+    - name: Install Rokit
+      run: curl -sSf https://raw.githubusercontent.com/rojo-rbx/rokit/main/scripts/install.sh | bash
     
     - name: Verify Rokit Installation
-      run: rokit --version || echo "Rokit installation failed"
-      
+      run: rokit --version
+    
     - name: Install Selene
-      run: rokit install selene || echo "Selene installation failed"
+      run: rokit install selene
     
     - name: Lint
       run: |
