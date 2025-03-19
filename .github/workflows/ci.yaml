@@ -17,16 +17,20 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Install Rokit
-        run: |
-          curl -sSf https://raw.githubusercontent.com/rojo-rbx/rokit/main/scripts/install.sh | bash
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    
+    - uses: rojo-rbx/rokit
+      name: Install Rokit
+      with:
+        version: "^1.0.0"
+    
+    - name: Verify Rokit Installation
+      run: rokit --version || echo "Rokit installation failed"
       
-      - name: Verify Rokit Installation
-        run: rokit --version || echo "Rokit installation failed"
-
-      - name: Lint
-        run: |
-          selene src
+    - name: Install Selene
+      run: rokit install selene || echo "Selene installation failed"
+    
+    - name: Lint
+      run: |
+        selene src
