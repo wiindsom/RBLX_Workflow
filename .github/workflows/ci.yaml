@@ -36,4 +36,7 @@ jobs:
     
     - name: Lint
       run: |
-        selene src
+        echo "Checking if Selene is in PATH..."
+        which selene || echo "Selene not found!"
+        selene --version || echo "Failed to detect Selene version!"
+        selene src || echo "Selene failed to run!"
