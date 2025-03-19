@@ -36,10 +36,10 @@ jobs:
     
     - name: Install Selene
       run: |
-        ls -l $HOME/.rokit/bin
-        echo "Checking if Rokit is in PATH..."
-        which rokit || echo "Rokit not found!"
         rokit install selene
+        echo "export PATH=\$HOME/.rokit/bin:\$PATH" >> ~/.bashrc
+        echo "$HOME/.rokit/bin" >> $GITHUB_PATH
+        source ~/.bashrc
     
     - name: Lint
       run: |
