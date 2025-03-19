@@ -32,4 +32,4 @@ jobs:
 
       - name: Linter Deployed
         run: |
-          selene ./src
+          selene src
