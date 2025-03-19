@@ -3,21 +3,21 @@
 </h1>
 
 <h3>
-  lune: https://lune-org.github.io/docs
+  [Lune](https://lune-org.github.io/docs)
 </h3>
 
 <h3>
-  rojo: https://rojo.space/
+  [Rojo](https://rojo.space/)
 </h3>
 
 <h3>
-  rokit: https://github.com/rojo-rbx/rokit
+  [Rokit](https://github.com/rojo-rbx/rokit)
 </h3>
 
 <h3>
-  luau lsp: https://github.com/JohnnyMorganz/luau-lsp
+  [Luau-LSP](https://github.com/JohnnyMorganz/luau-lsp)
 </h3>
 
 <h3>
-  aftman: https://github.com/LPGhatguy/aftman
+  [Selene](https://github.com/Kampfkarren/selene)
 </h3>
