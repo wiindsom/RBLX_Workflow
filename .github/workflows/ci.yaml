@@ -34,11 +34,6 @@ jobs:
         which rokit || echo "Rokit not found!"
         rokit --version
     
-    - name: Install Selene
-      run: |
-        rokit trust Kampfkarren/selene
-        rokit add Kampfkarren/selene
-    
     - name: Lint
       run: |
         selene src
