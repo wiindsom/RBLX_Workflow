@@ -29,13 +29,17 @@ jobs:
     
     - name: Verify Rokit Installation
       run: |
-        ls -l $HOME/.rokit/bin  # List installed files for debugging
+        ls -l $HOME/.rokit/bin
         echo "Checking if Rokit is in PATH..."
         which rokit || echo "Rokit not found!"
         rokit --version
     
     - name: Install Selene
-      run: rokit install selene | bash
+      run: |
+        ls -l $HOME/.rokit/bin
+        echo "Checking if Rokit is in PATH..."
+        which rokit || echo "Rokit not found!"
+        rokit install selene
     
     - name: Lint
       run: |
