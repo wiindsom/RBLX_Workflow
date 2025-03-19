@@ -5,3 +5,5 @@
 
 [tools]
 lune = "lune-org/lune@0.8.9"
+rojo = "rojo-rbx/rojo@7.4.4"
+selene = "Kampfkarren/selene@0.28.0"
