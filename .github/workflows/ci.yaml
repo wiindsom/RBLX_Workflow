@@ -21,10 +21,18 @@ jobs:
       uses: actions/checkout@v4
     
     - name: Install Rokit
-      run: curl -sSf https://raw.githubusercontent.com/rojo-rbx/rokit/main/scripts/install.sh | bash
+      run: |
+        curl -sSf https://raw.githubusercontent.com/rojo-rbx/rokit/main/scripts/install.sh | bash
+        echo "export PATH=\$HOME/.rokit/bin:\$PATH" >> ~/.bashrc
+        echo "$HOME/.rokit/bin" >> $GITHUB_PATH
+        source ~/.bashrc
     
     - name: Verify Rokit Installation
-      run: rokit --version | bash
+      run: |
+        ls -l $HOME/.rokit/bin  # List installed files for debugging
+        echo "Checking if Rokit is in PATH..."
+        which rokit || echo "Rokit not found!"
+        rokit --version
     
     - name: Install Selene
       run: rokit install selene | bash
