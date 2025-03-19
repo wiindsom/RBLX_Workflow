@@ -31,5 +31,4 @@ jobs:
         run: rokit install selene || echo "Selene installation failed"
 
       - name: Linter Deployed
-        run: |
-          selene src
+        run: selene src
