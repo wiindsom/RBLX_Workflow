@@ -36,6 +36,7 @@ jobs:
     
     - name: Install Selene
       run: |
+        rokit trust Kampfkarren/selene
         rokit add Kampfkarren/selene
     
     - name: Lint
