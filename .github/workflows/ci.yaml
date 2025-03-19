@@ -36,10 +36,7 @@ jobs:
     
     - name: Install Selene
       run: |
-        rokit add selene
-        echo "export PATH=\$HOME/.rokit/bin:\$PATH" >> ~/.bashrc
-        echo "$HOME/.rokit/bin" >> $GITHUB_PATH
-        source ~/.bashrc
+        rokit add Kampfkarren/selene
     
     - name: Lint
       run: |
