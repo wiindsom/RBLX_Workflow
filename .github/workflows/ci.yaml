@@ -13,19 +13,13 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
+    - uses: CompeyDev/setup-rokit@v0.1.2
+      with:
+        version: v1.0.0
+    
     - name: Checkout Repository
       uses: actions/checkout@v4
-
-    - name: Install Rokit
-      run: |
-        curl -sSf https://raw.githubusercontent.com/rojo-rbx/rokit/main/scripts/install.sh | bash
-        echo "$HOME/.rokit/bin" >> $GITHUB_PATH
-
-    - name: Reload PATH
-      run: echo "$HOME/.rokit/bin" >> $GITHUB_PATH
-
+    
     - name: Lint
-      run: |
-        export PATH="$HOME/.rokit/bin:$PATH"
-        selene --version
+      run: selene --version
       
