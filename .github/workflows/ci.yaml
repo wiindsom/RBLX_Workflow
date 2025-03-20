@@ -8,8 +8,6 @@ on:
     branches:
       - master
 
-
-
 jobs:
   lint:
     name: Lint
@@ -22,7 +20,9 @@ jobs:
       run: |
         curl -sSf https://raw.githubusercontent.com/rojo-rbx/rokit/main/scripts/install.sh | bash
         echo "$HOME/.rokit/bin" >> $GITHUB_PATH
-        ls -la $HOME/.rokit/bin
+
+    - name: Reload PATH
+      run: echo "$HOME/.rokit/bin" >> $GITHUB_PATH
 
     - name: Lint
       run: |
