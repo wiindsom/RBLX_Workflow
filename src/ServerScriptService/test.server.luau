@@ -1,7 +1,7 @@
 print("Hello world, from server!")
 
-local function doSomething(a, b)
-    print(a + b)
-end
+local a = game:GetService("ReplicatedStorage")
 
-doSomething(5)
+local testModule = require(a.test)
+
+print(testModule()
