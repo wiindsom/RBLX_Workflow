@@ -20,5 +20,5 @@ jobs:
 
     - name: Lint
       run: |
-        selene ./modules
+        selene --version
       
