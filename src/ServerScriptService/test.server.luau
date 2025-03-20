@@ -4,4 +4,4 @@ local a = game:GetService("ReplicatedStorage")
 
 local testModule = require(a.test)
 
-print(testModule()
+print(testModule())
