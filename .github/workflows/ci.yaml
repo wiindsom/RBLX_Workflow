@@ -13,12 +13,14 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-    - uses: CompeyDev/setup-rokit@v0.1.2
-      with:
-        version: v1.0.0
-      run: selene --version
-    
     - name: Checkout Repository
       uses: actions/checkout@v4
     
+    - uses: CompeyDev/setup-rokit@v0.1.2
+      name: Install Rokit
+      with:
+        version: v1.0.0
+    
+    - name:
+      run: selene ./src
       
