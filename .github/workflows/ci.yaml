@@ -15,12 +15,12 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
-    
+
     - uses: CompeyDev/setup-rokit@v0.1.2
       name: Install Rokit
       with:
         version: v1.0.0
     
-    - name:
+    - name: Deploy Linter
       run: selene ./src
       
