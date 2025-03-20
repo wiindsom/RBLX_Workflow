@@ -8,9 +8,7 @@ on:
     branches:
       - master
 
-defaults:
-  run:
-    shell: bash
+
 
 jobs:
   lint:
@@ -19,9 +17,8 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
-    
-    - name: Install Aftman
-      uses: ok-nick/setup-aftman@v0.4.2
+
+
 
     - name: Lint
       run: |
