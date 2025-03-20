@@ -18,6 +18,11 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
+    - name: Install Rokit
+      run: |
+        curl -sSf https://raw.githubusercontent.com/rojo-rbx/rokit/main/scripts/install.sh | bash
+        echo "$HOME/.rokit/bin" >> $GITHUB_PATH
+
     - name: Lint
       run: |
         selene --version
