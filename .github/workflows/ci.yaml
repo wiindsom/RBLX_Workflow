@@ -21,6 +21,6 @@ jobs:
       with:
         version: v1.0.0
     
-    - name: Deploy Linter
+    - name: Codebase Checker
       run: selene ./src
       
