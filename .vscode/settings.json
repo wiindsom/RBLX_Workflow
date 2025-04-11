@@ -1,6 +1,8 @@
 {
-  "luau-lsp.require.mode": "relativeToFile",
-  "luau-lsp.require.directoryAliases": {
-    "@lune/": "~/.lune/.typedefs/0.8.9/"
-  }
+    "editor.formatOnSave": false,
+    "luau-lsp.completion.imports.enabled": true,
+    "luau-lsp.completion.imports.suggestServices": true,
+    "luau-lsp.completion.imports.suggestRequires": false,
+    "luau-lsp.completion.imports.requireStyle": "alwaysRelative",
+    "luau-lsp.sourcemap.rojoProjectFile": "develop.project.json"
 }

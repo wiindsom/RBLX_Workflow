@@ -21,3 +21,11 @@
 <h3>
   [Selene]: https://github.com/Kampfkarren/selene
 </h3>
+
+<h3>
+  [StyLua]: https://github.com/JohnnyMorganz/StyLua
+</h3>
+
+<h3>
+  [Darklua]: https://darklua.com/
+</h3>

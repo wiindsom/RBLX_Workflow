@@ -1,10 +1,10 @@
-run_lune.sh
-run_selene.sh
-# Project place file
-/Roblox_Game.rbxlx
+# scripts/*.sh
+# .luaurc
 
-# Roblox Studio lock files
+empty.rbxl
+
 /*.rbxlx.lock
 /*.rbxl.lock
 
-sourcemap.json
+# dist/
+# **/sourcemap.json

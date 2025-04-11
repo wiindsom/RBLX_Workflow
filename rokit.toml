@@ -7,3 +7,6 @@
 lune = "lune-org/lune@0.8.9"
 rojo = "rojo-rbx/rojo@7.4.4"
 selene = "Kampfkarren/selene@0.28.0"
+luau-lsp = "johnnymorganz/luau-lsp@1.41.0"
+darklua = "seaofvoices/darklua@0.16.0"
+stylua = "johnnymorganz/stylua@2.0.2"
