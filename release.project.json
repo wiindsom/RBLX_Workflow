@@ -1,21 +1,21 @@
 {
     "emitLegacyScripts": false,
-    "name": "development-stage",
+    "name": "release-stage",
     "tree": {
         "$className": "DataModel",
         "ReplicatedStorage": {
             "$ignoreUnknownInstances": true,
             "Shared": {
-                "$path": "src/Shared"
+                "$path": "dist/Shared"
             },
             "Client": {
-                "$path": "src/Client"
+                "$path": "dist/Client"
             }
         },
         "ServerScriptService": {
             "$ignoreUnknownInstances": true,
             "Server": {
-                "$path": "src/Server"
+                "$path": "dist/Server"
             }
         }
     }

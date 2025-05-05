@@ -1,3 +1,9 @@
 {
-    "languageMode": "strict"
+    "languageMode": "strict",
+    "aliases": {
+        "Server": "./Server/",
+        "Shared": "./Shared/",
+        "Client": "./Client/",
+        "lune": "~/.lune/.typedefs/0.8.9/"
+    }
 }
