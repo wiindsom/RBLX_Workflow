@@ -1,10 +1,10 @@
-# scripts/*.sh
-# .luaurc
+scripts/*.sh
+.luaurc
 
 empty.rbxl
 
 /*.rbxlx.lock
 /*.rbxl.lock
 
-# dist/
-# **/sourcemap.json
+dist/
+**/sourcemap.json
