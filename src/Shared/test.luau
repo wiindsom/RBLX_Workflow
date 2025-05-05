@@ -1,4 +1,3 @@
-return function(msg: string)
+return function()
 	print("Hello! From Shared Test!")
-    print(msg)
 end
